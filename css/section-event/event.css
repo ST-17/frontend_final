@@ -1,0 +1,377 @@
+.carous{
+    width: 620px;
+    margin: 0 auto;
+}
+
+.event-main{
+    background-image: url("img/event.png");
+    text-align: center;
+}
+
+.events-wrapper{
+    align-items: center;
+}
+
+.cont{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.cont1{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.cont2{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.iceparty{
+    text-align: right;
+    color: black;
+    margin-top: 30px;
+}
+
+.ice_text{
+    color: black;
+    margin-top: 30px;
+    padding-left: 70px;
+    
+}
+.ice_date{
+    text-align: right;
+    color: black;
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+.button{
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    
+    background-color: #1f2b3f;
+    font-size: 14px;
+    padding: 13px 30px;
+    color: #5484d4;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 3px solid #5484d4;
+    margin-top: 35px;
+   
+}
+.btn:hover{
+    color: inherit;
+    background-color: #5484d4;
+    transition: 0.3s;
+}
+#one{
+    float: left;
+}
+#two{
+    float: right;
+}
+#three{
+    float: left;
+}
+.carous1{
+    width: 620px;
+    margin: 0 auto;
+}
+
+.tauryz{
+    
+    color: black;
+    margin-top: 30px;
+}
+
+.tauryz_text{
+    color: black;
+    margin-top: 30px;
+    padding-right: 70px;
+
+}
+
+.tauryz_date{
+    
+    color: black;
+    margin-top: 30px;
+    font-size: 28px;
+}
+.container_join{
+    width: 350px;
+    height: 400px;
+}
+.join_text h3{
+    color: rgb(84,132,212);
+    font-size: 22px;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+.join_text h1{
+    color: rgba(31,43,63,255);
+    padding-bottom: 15px;
+}
+.join_text p{
+    color: rgba(31,43,63,255);
+    padding-bottom: 5px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-inline: 200px;
+}
+.pohod{
+    width: 350px;
+    height: 500px;
+
+}
+.pohod img{
+    width: 350px;
+    height: 260px;
+    padding-bottom: 15px;
+}
+.pohod h3{
+    color: black;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+.pohod_text{
+    color: rgba(31,43,63,255);
+    opacity: 0.7;
+    padding-bottom: 20px;
+}
+
+.location{
+    display: flex;
+}
+.location img{
+    width: 50px;
+    height: 60px;
+}
+.location p{
+    color: rgba(31,43,63,255);
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+.name2_mobile{
+    display: none;
+}
+.name1_mobile{
+    display: none;
+}
+.name_mobile{
+    display: none;
+}
+
+@media(max-width: 992px){
+.name{
+    display: none;
+}
+.name1{
+    display: none;
+}
+.name2{
+    display: none;
+}
+.name_mobile{
+    display: inline;
+}
+.name1_mobile{
+    display: inline;
+}
+.name2_mobile{
+    display: inline;
+}
+.cont{
+    display: block;
+    padding-left: 9%;
+}
+.cont1{
+    display: block;
+    padding-left: 9%;
+}
+.cont2{
+    display: block;
+    padding-left: 9%;
+}
+.bottom{
+    display: block;
+    padding-left: 29%;
+}
+.carous{
+    width: 470px;
+}
+.carous1{
+    width: 470px;
+}
+.iceparty{
+    text-align: center;
+}
+.tauryz{
+    text-align: center;
+}
+.ice_text{
+    text-align: center;
+    padding-inline: 80px;
+}
+.tauryz_text{
+    text-align: center;
+    padding-inline: 80px;
+}
+.ice_date{
+    text-align: center;
+}
+.tauryz_date{
+    text-align: center;
+}
+#one{
+    margin-left: 35%;
+}
+#two{
+    margin-right: 35%;
+}
+#three{
+    margin-left: 35%;
+}
+#four{
+    margin-left: 15%;
+}
+.join_text h3{
+    text-align: center;
+}
+.join_text h1{
+    text-align: center;
+}
+.join_text p{
+    text-align: center;
+}
+.pohod h3{
+    text-align: center;
+}
+.pohod_text{
+    text-align: center;
+}
+}
+
+@media(max-width: 420px){
+    .name{
+        display: none;
+    }
+    .name1{
+        display: none;
+    }
+    .name2{
+        display: none;
+    }
+    .name_mobile{
+        display: inline;
+    }
+    .name1_mobile{
+        display: inline;
+    }
+    .name2_mobile{
+        display: inline;
+    }
+    .cont{
+        display: block;
+        align-items: center;
+    }
+    .cont1{
+        display: block;
+        align-items: center;
+    }
+    .cont2{
+        display: block;
+        align-items: center;
+    }
+    .bottom{
+        display: block;
+        padding-left: 9%;
+    }
+    .join_text{
+        padding-inline: 20px;
+    }
+    .carous{
+        width: 310px;
+    }
+    .carous1{
+        width: 310px;
+    }
+    .iceparty{
+        text-align: center;
+    }
+    .tauryz{
+        text-align: center;
+    }
+    .ice_text{
+        text-align: center;
+        padding-inline: 40px;
+    }
+    .tauryz_text{
+        text-align: center;
+        padding-inline: 40px;
+    }
+    .ice_date{
+        text-align: center;
+    }
+    .tauryz_date{
+        text-align: center;
+    }
+    #one{
+        margin-left: 27%;
+    }
+    #two{
+        margin-right: 27%;
+    }
+    #three{
+        margin-left: 27%;
+    }
+    #four{
+        margin-left: 15%;
+    }
+    .join_text h3{
+        text-align: center;
+    }
+    .join_text h1{
+        text-align: center;
+    }
+    .join_text p{
+        text-align: center;
+    }
+    .pohod h3{
+        text-align: center;
+    }
+    .pohod_text{
+        text-align: center;
+    }
+    .info-title{
+        
+        text-align: center;
+        margin-right: auto;
+    }
+    .info-text{
+        
+        text-align: center;
+        margin-right: auto;
+    }
+    body{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    }

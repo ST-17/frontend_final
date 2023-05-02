@@ -1,0 +1,31 @@
+.info-title{
+    text-transform: uppercase;
+    color: #5484d4;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.info-text{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 34px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.blue-word{
+    color: #5484d4;
+}
+
+@media (max-width: 1200px){
+    .info-title{
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .info-text{
+        font-weight: 600;
+        font-size: 30px;
+    }
+}

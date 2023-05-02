@@ -1,0 +1,32 @@
+.main{
+    background-position: center calc(10% + 0px);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("background-img/hike1.png");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+.text{
+    padding-left: 50%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.text h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+}
+.tex{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px){
+    .main{
+        text-align: center;
+    }
+    .text{
+        padding-left: 1%;
+    }
+}

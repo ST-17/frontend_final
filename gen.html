@@ -1,0 +1,243 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Information</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/section-gen/gen.css">
+</head>
+<body>
+    <div class="nav">
+        <label for="toggle">&#9776;</label>
+    </div>
+    <input type="checkbox" id="toggle">
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-items">
+                    <a style="text-decoration: none;" class="header__a" id="BirchGrove">BIRCH GROVE</a>
+                    <a style="text-decoration: none;" class="header__a" id="Altynbas">ALTYNBAS</a>
+                    <a style="text-decoration: none;" class="header__a" id="Butakov-glade">BUTAKOV GLADE</a>
+                    <a style="text-decoration: none;" class="header__a" id="Kok-Zhailau">KOK-ZHAILAU</a>
+                    <img src="img/IMG_9059.PNG" alt="" class="logo" href="home.html" onclick="window.location.reload()">
+                    <a style="text-decoration: none;" class="header__a" id="Japanese-road">JAPANESE ROAD</a>
+                    <a style="text-decoration: none;" class="header__a" id="Furmanov-peak">FURMANOV PEAK</a>
+                    <a style="text-decoration: none;" class="header__a" id="oz_MM">M.MAMETOVA LAKE</a>
+                    <a style="text-decoration: none;" class="header__a" id="T1">T1</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <section class="here">
+        <div class="container" style="background: #1f2b3f;">
+            <div class="here-wrapper">
+                <div class="gen-text">
+                    <h1 style="color:white;font-weight: 765;">HERE YOU CAN FIND ALL <span style="color: #5484d4; font-style: oblique;">GENERAL INFROMATION</span><br> ABOUT OUR LOCATIONS</h1>
+                    <h2 style="color: #5484d4; font-style: oblique;"> CHOOSE YOUR LOCATION</h2>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="main-gen">
+        <div class="container">
+            <div class="main-wrapper" style="display: none;">
+                <div class="main-text"><h1 id="location-name" style="color: #5484d4; text-align: center; font-weight: 900; font-size:45px">BIRCH GROVE</h1></div>
+                <div class="main-image"><img src="img/IMG_1306.JPG" id="image" style="width: 100%; height: 300px; object-fit: cover;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="general-information"> 
+            <div class="container"> 
+                <div class="general-information-wrapper"> 
+                    <h1 style="color: #5484d4; font-style:oblique; font-weight: 900; font-size:45px">GENERAL INFORMATION</h1> 
+                    <p id="text-general-info" style="color:#1f2b3f;">The place we are heading to is located within the city - it got to hell when the city took over a huge piece of the Ilealatau park, located in the mountains. Not far from that grove is Kok-Zhailau, however, the entrance to the place is from the bottom, especially you don't need to go anywhere. You can get there directly from Dostyk Avenue - city bus routes 5B and 5B. In general, the place is ideal to get away from the bustle of the city for an hour or two. The whole trip took about three hours - from the entrance to the entrance.</p> 
+                </div> 
+            </div> 
+        </section> 
+        <section class="adventure"> 
+            <div class="container"> 
+                <div class="adventure-wrapper"> 
+                    <div class="adventure-item"> 
+                        <p class="info-text" style="color: white;">LET'S <span class="blue-word">ADVENTURE</span> WITH US!</p> 
+                        <p style="color:white;">Aenean lorem sem, maximus a tortor sed, sagittis malesuada nunc. Nunc id diam id diam tincidunt condimentum non sed enim.</p> 
+                    </div> 
+                    <input type="text" class="adventure-input" placeholder="Your Email address"> 
+                    <button class="btn" style="width: 10%; margin: 0;">Login</button> 
+                </div> 
+            </div> 
+        </section> 
+        <section class="road"> 
+            <div class="container"> 
+                <div class="road-wrapper">
+                    <div id="map"></div> 
+                    <script> 
+                        var map; 
+                        function initMap() { 
+                            var location = {lat: 43.172134, lng: 76.992874}; 
+                            map = new google.maps.Map(document.getElementById('map'), {zoom: 13, center: location}); 
+                            var marker = new google.maps.Marker({position: location, map: map}); 
+                        } 
+                        function newLocation(newLat, newLng){ 
+                            map.setCenter({lat: newLat, lng: newLng}); 
+                            var latlng = {lat: newLat, lng: newLng}; 
+                            var marker = new google.maps.Marker({ 
+                                position: latlng, 
+                                map: map 
+                            });    
+                        } 
+                        $(document).ready(function (){ 
+                            $("#Altynbas").on('click', function () { newLocation(43.173527, 77.079155); });
+                            $("#Butakov-glade").on('click', function () {newLocation(43.172196, 77.100849); });
+                            $("#Kok-Zhailau").on('click', function () { newLocation(43.137660, 77.000274); }); 
+                            $("#Japanese-road").on('click', function () { newLocation(43.115699, 76.928945); }); 
+                            $("#Furmanov-peak").on('click', function () { newLocation(43.149670, 77.116362); }); 
+                            $("#oz_MM").on('click', function () { newLocation(43.078800, 77.101467); }); 
+                            $("#T1").on('click', function () { newLocation(43.066819, 77.073859); }); 
+                        }); 
+                    </script> 
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCukQ4aZ2ERzBpKmLPd5oUnuonu_bwciXo&callback=initMap"></script> 
+                    
+                        <script type="text/javascript">
+                            $(".logo").mouseover(function(){
+                                $(".logo").animate({marginTop: '+=5px'});
+                            });
+                            $(".logo").mouseout(function(){
+                                $(".logo").animate({marginTop: '-=5px'});
+                            });
+                            $(".gen-text h2").mouseover(function(){
+                                $(".header__a").animate({marginTop: '+=10px'});
+                            });
+                            $(".gen-text h2").mouseout(function(){
+                                $(".header__a").animate({marginTop: '-=10px'});
+                            });
+                        
+
+                            $("a").click(function(){
+                                $(".general-information").show();
+                                $(".adventure").hide(); 
+                                $(".road").show();
+                                $(".main").show();
+                                $(".main-wrapper").show();
+                                $(".here").hide();  
+                            }); 
+                            $("#BirchGrove").click(function(){ 
+                                $(window).scrollTop(0); 
+                            }); 
+                            $("#Altynbas").click(function(){ 
+                                $("#image").attr("src", "img/IMG_1521.JPG");
+                                $("#location-name").text("ALTYNBAS"); 
+                                $("#span-name").text("ALTYNBAS?"); 
+                                $("#text-general-info").text("Trekking to Mount Serkebay (Altyn Bas) through the Kim-Asar gorge. Summit Serkebay (2160 m.) Is one of the easiest routes in the mountains of Almaty"); 
+                                $("#road-text").text("This is not at all difficult, one might say a walking route with a length of 7 km and an ascent of 600 meters, in terms of its parameters, it is similar to a hike to KZh, but much less visited. The thread of the route: Medeo-mountain Serkebay-Kimasar-Medeo pass. The initial part of the path is described in detail in the post Along the Karakungey Ridge. Here, in a nutshell: from the final 12 bus to Medeo, we enter the Kimasar gorge, walk about 0.5 km along the asphalt, and before reaching the barrier, at the turn to the Kaz-Aul cafe, we turn left, and first along the trail, and then along the abandoned dirt road, after 2 km from the beginning of the path, we climb the ridge to the wooden tower, and then to the benches."); 
+                                $(window).scrollTop(0); 
+                            }); 
+                            $("#Butakov-glade").click(function(){ 
+                                $("#image").attr("src", "img/IMG_1495.JPG");  
+                                $("#location-name").text("BUTAKOV GLADE"); 
+                                $("#span-name").text("BUTAKOV GLADE?"); 
+                                $("#text-general-info").text("Butakovskoe gorge or simply Butakovka is a very accessible place for mountain trekking. You can come here by car directly along the gorge or come on foot from Medeo.There are two waterfalls here: the lower one, which is usually visited by everyone, and the upper one, which can be covered in snow until the end of summer.Good trails to the Forest Pass and the Butakovsky Pass.From here you can go to Bukreev Peak, Furmanovka Peak or go for a multi-day trekking in the Levy Talgar gorge.A wide variety of routes at any time of the year."); 
+                                $("#road-text").text("Walking time from the parking lot in Butakovka is about an hour. The start of the trail is at an altitude of 1,787 meters above sea level. At first, the trail is unpaved, but well-trodden, and the ascent is gentle, which makes the route quite easy. The trail leads you to the glade with pavilions, on the left and on the right there are densely planted Siberian firs. It takes about twenty minutes to cross the brook, then turn right after it and climb slightly to the left. Then follow the trail through the forest to the old cabin. From the start to the clearing with the cabin, it's no more than 2 km away. The base is called Extreme, sometimes you can meet some tourists here. "); 
+                                $(window).scrollTop(0); 
+                            }); 
+                            $("#Kok-Zhailau").click(function(){ 
+                                $("#image").attr("src", "img/IMG_1591.JPG");
+                                $("#location-name").text("KOK-ZHAILAU"); 
+                                $("#span-name").text("KOK-ZHAILAU?"); 
+                                $("#text-general-info").text("Kok Zhailau (Kazakh: Көк Жайлау, romanized: Kók Jaılaý, sky-blue summer pasture', Russian: Кок Жайляу) is a plateau in the territory of the Ile-Alatau State National Natural Park located at an altitude of 2251.2 m. It is located between the Small and Big Almaty gorges, 10 km from the city of Almaty (in Kazakhstan). The track is located 1450-1740 m above sea level. Almaty, ski resort Shymbulak, the Medeu, and Big Almaty peak can be seen from the plateau."); 
+                                $("#road-text").text("There are two popular routes to get to Kok-Zhailyau: the first starts from the Prosveschenets sanatorium (bus number 12, the Rodnik stop), the second, longer one, starts from the Big Almaty Gorge, a left turn after the eco-post, go along  to the road of the Kumbel hotel, then up into the gorge."); 
+                                $(window).scrollTop(0); 
+                            }); 
+                            $("#Japanese-road").click(function(){ 
+                                $("#image").attr("src", "img/IMG_1588.JPG"); 
+                                $("#location-name").text("JAPANESE ROAD"); 
+                                $("#span-name").text("JAPANESE ROAD?"); 
+                                $("#text-general-info").text("The current mountain serpentine is the remnants of a working road that was laid during the construction of HPP-1.  Japanese prisoners of war, who were in the camp No. 40 stationed in Almaty in the period from 1939 to 1956, punched tunnels through the mountains.  The road made it possible to drive up to the pits and ventilation shafts, control the construction, and after that - the operation of the hydroelectric power station: ventilate the tunnels, monitor the pressure and water level.  We drove up the road and to the induction mudflow sensors - a stretched cable to which the alarm was connected, and in the event of a descent, the cable was torn and the sound siren sounded."); 
+                                $("#road-text").text("On the one hand, the route is close to the city, and on the other, it is a real mountain track.  You will have panoramic views of the city and the gorge.  You will be able to see firsthand a project that used a colossal amount of human resources.  Just imagine, a man cut through a mountain in order to build tunnels for water - adits, of which there are two on the Japanese trail."); 
+                                $(window).scrollTop(0); 
+                            }); 
+                            $("#Furmanov-peak").click(function(){ 
+                                $("#image").attr("src", "img/IMG_1589.JPG");  
+                                $("#location-name").text("FURMANOV PEAK"); 
+                                $("#span-name").text("FURMANOV PEAK?"); 
+                                $("#text-general-info").text("Furmanov Peak is the closest peak to the city, with a difficulty higher than going to Butakovka or Kok-Zhailau.  Its height, according to some sources, is 2,850 meters.  The history of the name of the peak is confused - someone says that it is because Furmanov lived in Verny in the 1920s, someone writes that in addition to the Komissarov Gorge."); 
+                                $("#road-text").text("The path starts from the ecological post (with a barrier), which is located one and a half kilometers from the VSC Medeu.  Above the post, the Kim-Asar gorge begins, which is very popular among our tourists.  There are many beautiful places for recreation in the gorge, so even if you do not go to the peak, a walk along the gorge will bring a lot of pleasure.  After the asphalt road ends, a good dirt path begins, which leads to the ridge leading to Furmanov Peak.  Go further up the ridge, soon you will see the famous swing, this place is called Flag."); 
+                                $(window).scrollTop(0); 
+                            }); 
+                            $("#oz_MM").click(function(){  
+                                $("#image").attr("src", "img/mm3.JPG"); 
+                                $("#location-name").text("MANSHUK MAMETOVA LAKE"); 
+                                $("#span-name").text("MANSHUK MAMETOVA LAKE?"); 
+                                $("#text-general-info").text("Lake Manshuk Mametova (another name - Lake No. 6) is located in the Zailiysky Alatau, in the Maloalmatinsky gorge, at an altitude of 3550 m above sea level, 20 km south of Almaty.The lake takes its name from the eponymous glacier named after the heroine of World War II Manshuk Mametova.  The glacier is located in the immediate vicinity, feeds the lake and even forms one of the banks, breaking off with a sheer wall into the water.In winter, the lake is covered with thick ice, which completely melts only in June.  The lake constantly changes its color - from beige to turquoise blue, depending on the month and the weather ..Several four thousandth peaks rise above the lake, climbing routes on which are most popular among mountain climbers: Amangeldy Peak (4000 m), Pioner Peak (4017 m), Uchitel Peak (4027 m), 28 Heroes Panfilov Peak, M. Mametova Peak (  4191m) and Antikainen Peak (4000m)."); 
+                                $("#road-text").text("The walking part of the excursion begins at the Tuyuksu Gate (2500m).  Then we pass the rocks of the Tuyuksu Gate and go to the meteorological station and the Mynzhilki dam.  After a short rest and a snack, we begin the ascent along the steep path towards Alpingrad, the path to which takes 1-1.5 hours.Alpingrad is a small plateau well protected from the wind, where climbers from other cities set up camp camps.  Height - 3400m. The rest of the way to the lake takes from forty minutes to an hour."); 
+                                $(window).scrollTop(0); 
+                            }); 
+                            $("#T1").click(function(){ 
+                                $("#image").attr("src", "img/IMG_1595.JPG");  
+                                $("#location-name").text("T1"); 
+                                $("#span-name").text("T1?"); 
+                                $("#text-general-info").text("The Tuyuk-Su glaciological station was founded in 1956 and is known to the entire scientific world thanks to continuous observations of the behavior of the glacier for more than half a century.  It is located in the basin of the Malaya Almatinka River, surrounded by eternal ice.  The mountain station belongs to the world network, and the fluctuations of Tuyuk-Su determine the state of all glaciers in Central Asia, since the station is the only one that continued to work after the collapse of the USSR.  Observations are conducted all year round, making the glacier one of the most studied in the world."); 
+                                $("#road-text").text("The path passes through the Tuyuk Su alpine camp, the Memorial to the Fallen Mountaineers, the Mynzhylki meteorological station to the T-1 glaciological station, at the foot of the Molodezhny glacier."); 
+                                $(window).scrollTop(0); 
+                            }); 
+                        </script> 
+                        <div class="road-text" id="road-text2" style="width: 600px; padding: 30px;"> 
+                        <h1 style="color: #1f2b3f; font-weight: 900; font-size:45px">HOW TO GET TO<br><span id="span-name" style="color: #5484d4;  font-style:oblique;">BIRCH GROVE?</span></h1> 
+                        <p id="road-text">Buses 5B and 5B go from the Green Bazaar, up the Dostyk. That is, we arrivearrive at any stop along Dostyk Avenue, wait for the bus and drive. Route 5B is displayed in Onay, but bus 5B is not visible in the application. If the goal is to walk less, then 5B is better.</p> </div> 
+                    </div> 
+                </div> 
+            </section> 
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-items1">
+                    <div class="footer-item1">
+                        <svg style="margin-top: 8px;" class="footer-icon1" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
+                        <div class="footer-item1-text">
+                            <p>Abylaihan 1/1</p>
+                            <p>Kaskelen, Kazakhstan</p>
+                        </div>
+                    </div>
+                    <div class="footer-item1">
+                        <svg class="footer-icon1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30" height="30" viewBox="0 0 891.024 891.024" style="enable-background:new 0 0 891.024 891.024;" xml:space="preserve"><g><path d="M2.8,180.875c46.6,134,144.7,286.2,282.9,424.399c138.2,138.2,290.4,236.301,424.4,282.9c18.2,6.3,38.3,1.8,52-11.8l92.7-92.7l21.6-21.6c19.5-19.5,19.5-51.2,0-70.7l-143.5-143.4c-19.5-19.5-51.2-19.5-70.7,0l-38.899,38.9c-20.2,20.2-52.4,22.2-75,4.6c-44.7-34.8-89-73.899-131.9-116.8c-42.9-42.9-82-87.2-116.8-131.9c-17.601-22.6-15.601-54.7,4.6-75l38.9-38.9c19.5-19.5,19.5-51.2,0-70.7l-143.5-143.5c-19.5-19.5-51.2-19.5-70.7,0l-21.6,21.6l-92.7,92.7C1,142.575-3.5,162.675,2.8,180.875z"/></g></svg>
+                        <p>+7 (747) 678-23-64</p>
+                    </div>
+                    <div class="footer-item1">
+                        <svg class="footer-icon1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                        <a href="" style="font-size: 20px;color: white;">mountain_kings@gmail.com</a>
+                    </div>
+                </div>
+                <div class="footer-item2">
+                    <p class="footer-item2-title">About MK</p>
+                    <p class="footer-item2-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, doloremque? Eligendi</p>
+                    <div class="footer-social">
+                        <svg class="jss17" role="img" viewBox="0 0 24 24">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                        </svg>
+                        <svg class="jss17" role="img" viewBox="0 0 24 24">
+                            <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path>
+                        </svg>
+                        <svg class="jss17" role="img" viewBox="0 0 24 24">
+                            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path>
+                        </svg>
+                        <svg class="jss17" role="img" viewBox="0 0 24 24">
+                            <path d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.main1{
+    background-position: center calc(120% + 0px);
+    height: 650px;
+	background-size: cover;
+    background-image: url("background-img/mountt.png");
+}
+.main1-text{
+    width: 70%;
+    color: #1f2b3f;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.visible{
+    display: none;
+}
+.text1{
+    padding-left: 100px;
+    padding-right: 250px;
+    padding-top: 120px;
+    padding-bottom: 200px;
+}
+.text1 h1{
+    font-size: 40px;
+    width: 85%;
+    color: rgba(31,43,63,255);
+    font-weight: 700;
+}
+.tex1{
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media (max-width: 1360px){
+    .main1-text{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1280px){
+    .text1 h1{
+        font-size: 30px;
+    }
+    .tex1{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1138px){
+    .main1{
+        text-align: center;
+    }
+    .text1{
+        padding: 0;
+        padding-top: 15%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .text1 h1{
+        width: 100%;
+    }
+    .main1-text{
+        width: 100%;
+    }
+}
+
+@media (max-width: 439px){
+    .text1 h1{
+        font-size: 23px;
+    }
+    .tex1{
+        font-size: 15px;
+    }
+}

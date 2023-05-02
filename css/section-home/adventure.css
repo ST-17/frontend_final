@@ -1,0 +1,52 @@
+.adventure{
+    background-color: #1f2b3f;
+}
+.adventure-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.adventure-wrapper a{
+    width: 12%;
+    margin: 0;
+}
+.adventure-item{
+    width: 50%;
+}
+.adventure-input{
+    width: 35%;
+    height: 42px;
+    border-radius: 20px;
+    padding: 0 20px;
+    font-size: 18px;
+    border: 3px solid #5484d4;
+}
+
+@media (max-width: 1200px){
+    .adventure-wrapper{
+        display: inline;
+    }
+    .adventure-item{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .adventure-input{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .adventure-wrapper a{
+        width: 30%;
+        margin-left: 35%;
+    }
+}
+
+@media (max-width: 474px){
+    .adventure-wrapper a{
+        width: 50%;
+        margin-left: 25%;
+    }
+}

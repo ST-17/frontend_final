@@ -1,0 +1,40 @@
+
+
+@import 'components/info.css';
+@import 'components/button.css';
+
+@import 'section-home/header.css';
+@import 'section-home/main.css';
+@import 'section-home/main1.css';
+@import 'section-home/comfort.css';
+@import 'section-home/founder.css';
+@import 'section-home/adventure.css';
+@import 'section-home/price.css';
+@import 'section-home/footer.css';
+
+@import 'section-about/about.css';
+
+@import 'section-event/event.css';
+
+@import 'section-contact/contact-main.css';
+
+@import 'section-review/review.css';
+
+@import 'section-location/locations.css';
+
+@import 'section-login/login.css';
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+p{
+    margin: 0;
+}
+section{
+    padding: 100px 0;
+}
